@@ -1,4 +1,4 @@
-Manipullating images:
+Manipulating images:
  - Pulling image from DockerHub: `docker pull <image>`
  - Deleting an image: `docker rmi <image>`
  - Updating/Creating images from a container: `docker commit -m "message" <container> <image>`
