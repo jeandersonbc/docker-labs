@@ -2,6 +2,10 @@ Steps:
 
 ```
 $ docker swarm init
-$ docker stack deploy -c docker-compose.yml <appname>
-$ docker stack rm <appname>
+$ docker stack ls                                 # List all running applications on this Docker host
+$ docker stack deploy -c <composefile> <appname>  # Run the specified Compose file
+$ docker stack services <appname>                 # List the services associated with an app
+$ docker stack ps <appname>                       # List the running containers associated with an app
+$ docker stack rm <appname>                       # Tear down an application
+
 ```
